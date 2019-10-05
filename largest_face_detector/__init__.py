@@ -1,1 +1,1 @@
-from largest_face_detector.face_detector import __main__
+from largest_face_detector.face_detector import detect_largest_face

@@ -1,26 +1,27 @@
-from distutils.core import setup
+import setuptools
 
-setup(
-  name = 'largest_face_detector',
-  packages = ['largest_face_detector'],
-  version = '0.1', 
-  license='MIT',
-  description = 'Python package to crop largest face from images', 
-  author = 'Devang Kulshreshtha',
-  author_email = 'devang.kulshreshtha.cse14@itbhu.ac.in',
-  url = 'https://github.com/devangkulshreshtha/largest_face_detector',
-  download_url = 'https://github.com/devangkulshreshtha/largest_face_detector/archive/0.1.tar.gz',
-  keywords = ['FACE_DETECTOR', 'COMPUTER_VISON', 'OOPS_DESIGN'],
-  install_requires=[
+with open("README.md", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="largest_frontal_face_detector",
+    version="1.0.0",
+    author="Devang Kulshreshtha",
+    author_email="devang.kulshreshtha.cse14@itbhu.ac.in",
+    description="Python pakage for detecting largest face in an image",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    url="https://github.com/devangkulshreshtha/largest_face_detector",
+    install_requires=[
           'numpy',
           'dlib',
-      ],
-  classifiers=[
-    'Development Status :: 4 - Beta',
-    'Intended Audience :: Developers',
-    'Topic :: Software Development :: Build Tools',
-    'License :: OSI Approved :: MIT License',
-    'Programming Language :: Python :: 2', 
-    'Programming Language :: Python :: 2.7'
-  ],
+          'pillow'
+    ],
+    packages=setuptools.find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.6',
 )
