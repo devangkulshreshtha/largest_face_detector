@@ -17,6 +17,8 @@ The reader is supported on Python 3.6 and above.
 
 NOTE :: These dependency packages will be installed automatically upon installing largest-face-detector package.
 
+NOTE :: For dlib, cmake should be setup in your system. For instructions on how to install cmake, refer here - https://www.pyimagesearch.com/2018/01/22/install-dlib-easy-complete-guide/
+
 ## How to use
 
 The Largest Face Detector is a pip package, named `largest_face_detector`.  To detect face in a particular image, call the function `detect_largest_face` with image path as input (relative to current directory you are in)
